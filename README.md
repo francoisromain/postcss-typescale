@@ -40,7 +40,7 @@ Global settings (and default values):
 
 ``` css
 @typescale ([name]) {
-  scale: 1.25;          /* See [type-scale.com](http://type-scale.com/) to choose a scale */
+  scale: 1.25;          /* See type-scale.com to choose a scale */
   font-size: 1rem;      /* default font size */
   line-height: 1.5rem;  /* If no unit is provided, line-height is relative to font-size */
 }
@@ -55,8 +55,8 @@ Global settings (and default values):
 `typescale: ([name]) [index] ([line-height-fraction])`
 
 - _name_ (optional, default = _default_): string identifier referring to a settings atRule.
-- _index_: positive or negative integer. font-size = _font-size_ x _scale_ <sup>_index_</sup>.
-- _line-height-fraction_ (optional, default = 1): float or fraction. line-height = _line-height_ x _line-height-fraction_.
+- _index_: positive or negative integer. font-size = _font-size_ * _scale_ <sup>_index_</sup>.
+- _line-height-fraction_ (optional, default = 1): float or fraction. line-height = _line-height_ * _line-height-fraction_.
 
 #### Examples
 
