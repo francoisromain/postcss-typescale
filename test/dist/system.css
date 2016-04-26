@@ -1412,8 +1412,8 @@ header {
   padding-top: 3rem;
 }
 
-@typeset {
-  font-size: 3.051rem;
+@typescale {
+  font-size: 1rem;
   line-height: 1.5rem;
   scale: 1.25;
 }
@@ -1422,32 +1422,26 @@ header {
   typescale: 5 2;
 }
 
-h1,
 .xxl {
   typescale: 4 2;
 }
 
-h2,
 .xl {
   typescale: 3 1.5;
 }
 
-h3,
 .l {
   typescale: 2 1.5;
 }
 
-h4,
 .m {
   typescale: 1 1;
 }
 
-h5,
 .s {
   typescale: -1 1;
 }
 
-h6,
 .xs,
 small {
   typescale: -2 0.5;

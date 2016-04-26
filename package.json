@@ -11,7 +11,7 @@
     "css-system": "postcss -u postcss-import -u postcss-custom-properties -u postcss-grid-system -u postcss-cssnext -i test/src/system.css -o test/dist/system.css",
     "css-01": "postcss --local-plugins -u ./postcss-typescale -i test/src/01.css -o test/dist/01.css",
     "css-02": "postcss --local-plugins -u ./postcss-typescale -i test/src/02.css -o test/dist/02.css",
-    "build": "npm run babel && npm run css",
+    "build": "npm run babel && npm run test",
     "test": "npm run babel && npm run css && npm run css-system && npm run css-01 && npm run css-02",
     "watch": "onchange 'index.html' 'src/**/*.*' 'postcss-typescale/src/**/*.*' -- npm run build",
     "reload": "livereload",

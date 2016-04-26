@@ -1588,12 +1588,6 @@ header {
   padding-top: 3rem;
 }
 
-@typeset {
-  font-size: 3.051rem;
-  line-height: 1.5rem;
-  scale: 1.25;
-}
-
 .xxxl {
   font-size: 48.828px;
   font-size: 3.0517578125rem;
@@ -1601,7 +1595,6 @@ header {
   line-height: 3rem;
 }
 
-h1,
 .xxl {
   font-size: 39.062px;
   font-size: 2.44140625rem;
@@ -1609,7 +1602,6 @@ h1,
   line-height: 3rem;
 }
 
-h2,
 .xl {
   font-size: 31.25px;
   font-size: 1.953125rem;
@@ -1617,7 +1609,6 @@ h2,
   line-height: 2.25rem;
 }
 
-h3,
 .l {
   font-size: 25px;
   font-size: 1.5625rem;
@@ -1625,7 +1616,6 @@ h3,
   line-height: 2.25rem;
 }
 
-h4,
 .m {
   font-size: 20px;
   font-size: 1.25rem;
@@ -1633,7 +1623,6 @@ h4,
   line-height: 1.5rem;
 }
 
-h5,
 .s {
   font-size: 12.8px;
   font-size: 0.8rem;
@@ -1641,7 +1630,6 @@ h5,
   line-height: 1.5rem;
 }
 
-h6,
 .xs,
 small {
   font-size: 10.24px;
