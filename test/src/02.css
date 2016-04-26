@@ -1,0 +1,13 @@
+.test {
+  typescale: test;
+}
+
+@typescale {
+  scale: 1.25;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.truc {
+  typescale: default 1;
+}

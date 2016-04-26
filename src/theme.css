@@ -1,0 +1,121 @@
+/*
+    Theme
+-------------------------------
+
+*/
+
+
+/*
+    Sticky footer
+-------------------------------
+
+http://mystrd.at/modern-clean-css-sticky-footer/
+*/
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0 0 5rem;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: var(--color-inverse);
+  &:visited {
+    color: var(--color-inverse);
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-brand);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+b,
+strong,
+.strong {
+  font-weight: 700;
+}
+
+header {
+  padding-top: var(--base-unit-xl);
+}
+
+.container {
+  gs: container;
+}
+
+@typeset {
+  font-size: var(--text-xxxl);
+  line-height: var(--base-unit);
+  scale: 1.25;
+}
+
+
+.xxxl {
+  typescale: 5 2;
+}
+
+h1,
+.xxl {
+  typescale: 4 2;
+}
+
+h2,
+.xl {
+  typescale: 3 1.5;
+}
+
+h3,
+.l {
+  typescale: 2 1.5;
+}
+
+h4,
+.m {
+  typescale: 1 1;
+}
+
+h5,
+.s {
+  typescale: -1 1;
+}
+
+h6,
+.xs,
+small {
+  typescale: -2 0.5;
+}
+
+.lead {
+  typescale: 2 1.5;
+}
+
+blockquote {
+  typescale: 2 1.5;
+  font-style: italic;
+  padding-left: var(--base-unit);
+  padding-right: var(--base-unit);
+}

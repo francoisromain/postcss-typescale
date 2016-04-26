@@ -1,0 +1,22 @@
+@import "../../src/settings.css";
+@import "normalize.css";
+@import "system.css/print.css";
+@import "system.css/reset.css";
+@import "system.css/typography.css";
+@import "system.css/lists.css";
+@import "system.css/forms.css";
+@import "system.css/tables.css";
+@import "system.css/utils.css";
+@import "system.css/grid-system.css";
+@import "system.css/margins.css";
+@import "system.css/ui.css";
+@import "system.css/tools.css";
+@import "../../src/theme.css";
+
+.container {
+  gs: container;
+}
+
+.my-button, .my-button-2, .my-button-3, .my-button-4 {
+  padding: var(--base-unit-s) calc(var(--base-unit-s) * 2);
+}
