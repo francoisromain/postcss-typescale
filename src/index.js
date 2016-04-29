@@ -39,6 +39,7 @@ module.exports = postcss.plugin('postcss-typescale', (opts) => {
         if (values[0].match(/^[a-z]/i)) {
           Object.assign(options.tmp, options[values.shift()]);
         }
+
         if (values[0]) {
           options.tmp.index = values[0];
         }

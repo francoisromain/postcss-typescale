@@ -1,7 +1,7 @@
 {
   "name": "postcss-typescale",
-  "version": "0.1.1",
-  "description": "A PostCSS plugin to create a typographic scale.",
+  "version": "0.1.2",
+  "description": "A PostCSS plugin to set type based on a typographic scale.",
   "keywords": [
     "postcss",
     "css",
