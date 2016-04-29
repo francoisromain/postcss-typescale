@@ -1,0 +1,45 @@
+@typescale {
+  scale: 1.25;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.xxxl {
+  typescale: 4 2;
+}
+
+.xxl {
+  typescale: 3 2;
+}
+
+.xl {
+  typescale: 2 1.5;
+}
+
+.l {
+  typescale: 1 1.5;
+}
+
+.m {
+  typescale: 0 1;
+}
+
+.s {
+  typescale: -1 1;
+}
+
+.xs,
+small {
+  typescale: -2 0.5;
+}
+
+.lead {
+  typescale: 2 1.5;
+}
+
+blockquote {
+  typescale: 2 1.5;
+  font-style: italic;
+  padding-left: var(--base-unit);
+  padding-right: var(--base-unit);
+}
