@@ -28,8 +28,7 @@
   line-height: 1.5rem;
 }
 
-.xs,
-small {
+.xs {
   font-size: 0.64rem;
   line-height: 0.75rem;
 }
@@ -43,6 +42,6 @@ blockquote {
   font-size: 1.5625rem;
   line-height: 2.25rem;
   font-style: italic;
-  padding-left: var(--base-unit);
-  padding-right: var(--base-unit);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }

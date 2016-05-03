@@ -28,8 +28,7 @@
   typescale: -1 1;
 }
 
-.xs,
-small {
+.xs {
   typescale: -2 0.5;
 }
 
@@ -40,6 +39,6 @@ small {
 blockquote {
   typescale: 2 1.5;
   font-style: italic;
-  padding-left: var(--base-unit);
-  padding-right: var(--base-unit);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }

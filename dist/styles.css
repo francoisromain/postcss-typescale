@@ -762,12 +762,6 @@ html.grid {
 -------------------------------
 */
 
-@typescale {
-  scale: 1.25;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 h1,
 h2,
 h3,
@@ -818,40 +812,67 @@ footer {
 html {
   background-color: white;
   color: #666;
-  typescale: 0 1;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 h1 {
-  typescale: 4 2;
+  font-size: 39.062px;
+  font-size: 2.44140625rem;
+  line-height: 48px;
+  line-height: 3rem;
 }
 
 h2 {
-  typescale: 3 1.5;
+  font-size: 31.25px;
+  font-size: 1.953125rem;
+  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 h3 {
-  typescale: 2 1.5;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 h4 {
-  typescale: 1 1;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 h5 {
-  typescale: -1 1;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 h6,
 small {
-  typescale: -2 0.5;
+  font-size: 10.24px;
+  font-size: 0.64rem;
+  line-height: 12px;
+  line-height: 0.75rem;
 }
 
 .lead {
-  typescale: 2 1.5;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 blockquote {
-  typescale: 2 1.5;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 36px;
+  line-height: 2.25rem;
   font-style: italic;
   padding-left: 24px;
   padding-left: 1.5rem;
@@ -917,7 +938,14 @@ header {
 }
 
 .bloc-code {
-  gf: blob 1;
+  margin-right: 24px;
+  margin-right: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 calc(100% - 1.5rem);
+      -ms-flex: 0 1 calc(100% - 1.5rem);
+          flex: 0 1 calc(100% - 1.5rem);
 }
 
 @media (min-width: 43.5rem) {
@@ -934,7 +962,12 @@ header {
   }
 
   .bloc-code {
-    gf: blob 1/2;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 calc(50% - 1.5rem);
+        -ms-flex: 0 1 calc(50% - 1.5rem);
+            flex: 0 1 calc(50% - 1.5rem);
   }
 }
 
@@ -973,17 +1006,30 @@ header {
   }
 }
 
-@gf {
-  width: 1;
-  gutter: 1.5rem;
+.row {
+  clear: both;
+  margin-right: -24px;
+  margin-right: -1.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
 }
 
-.row {
-  gf: row;
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .margin-top-s {

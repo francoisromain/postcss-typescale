@@ -7,7 +7,7 @@
   <title>postcss-typescale</title>
   <meta name="description" content="A PostCSS plugin to create buttons.">
   <meta name="keywords" content="Grid system, css, postcss, npm, masonry">
-  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="http://francoisromain.github.io/system.css/dist/styles.css">
   <link rel="stylesheet" href="dist/typescale.css">
 </head>
 
@@ -15,10 +15,78 @@
   <header class="container" role="banner">
     <h1>postcss-typescale</h1>
     <p><a href="https://github.com/francoisromain/postcss-typescale">Github</a></p>
-    <h4>A PostCSS plugin to set type based on a typographic scale.</h4>
+    <h4>A PostCSS plugin to set type based on a <a href="http://type-scale.com/">typographic scale</a>.</h4>
     <hr />
   </header>
   <main class="container" role="main">
+    <div class=row>
+      <div class="bloc-code">
+        <h4>Input</h4>
+        <pre><code class="language-css">@typescale {
+  scale: 1.25;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.xxl {
+  typescale: 3 2;
+}
+
+.xl {
+  typescale: 2 1.5;
+}
+
+.l {
+  typescale: 1 1.5;
+}
+
+.m {
+  typescale: 0 1;
+}
+
+.s {
+  typescale: -1 1;
+}
+
+.xs {
+  typescale: -2 0.5;
+}</code></pre>
+        
+      </div>
+      <div class="bloc-code">
+      <h4>Output</h4>
+        <pre><code class="language-css">.xxl {
+  font-size: 1.953125rem;
+  line-height: 3rem;
+}
+
+.xl {
+  font-size: 1.5625rem;
+  line-height: 2.25rem;
+}
+
+.l {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
+.m {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.s {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.xs {
+  font-size: 0.64rem;
+  line-height: 0.75rem;
+}</code></pre>
+      </div>
+    </div>
+    <h4>Result</h4>
     <p class="xxxl">xxxl: Sample text</p>
     <p class="xxl">xxl: Sample text</p>
     <p class="xl">xl: Sample text</p>
@@ -29,7 +97,6 @@
     <p class="lead">Lead: Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
     <p>Paragraph: lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
     <blockquote>Blockquote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</blockquote>
-    <hr />
   </main>
   <footer>
     <div class="container">
@@ -37,6 +104,7 @@
       <p class="s">© 2016 <a href="http://francoisromain.com">François Romain</a> | <a href="https://twitter.com/francoisromain">Twitter</a> | <a href="https://github.com/francoisromain">Github</a></p>
     </div>
   </footer>
+  <script src="dist/prism.js"></script>
 </body>
 
 </html>

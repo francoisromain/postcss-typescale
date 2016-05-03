@@ -60,7 +60,6 @@ html {
   typescale: 0 1;
 }
 
-
 h1 {
   typescale: 4 2;
 }
@@ -173,6 +172,10 @@ header {
   margin-top: var(--base-unit-s);
 }
 
+.margin-top-xs {
+  margin-top: var(--base-unit-xs);
+}
+
 code {
   white-space: pre-wrap;
   background-color: var(--color-alt);
@@ -252,6 +255,7 @@ code {
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }
