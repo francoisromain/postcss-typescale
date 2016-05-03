@@ -64,36 +64,5 @@ The line-height can be relative to the font-size if _line-height_ is set to 1 wi
 
 ## Examples
 
-```css
-.title {
-  typescale: 3 1.5;
-}
-
-.text {
-  typescale: 0;
-}
-
-.small-text {
-  typescale: -1;
-}
-
-.extra-small-text {
-  typescale: -2 0.5;
-}
-```
-
-
-``` css
-@typescale my-scale {
-  scale: 1.25;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.my-small-text {
-  typescale: my-scale -2 0.5;
-}
-```
-
 01: [input](https://github.com/francoisromain/postcss-typescale/blob/gh-pages/test/src/01.css), [output](https://github.com/francoisromain/postcss-typescale/blob/gh-pages/test/dist/01.css), [markup](https://github.com/francoisromain/postcss-typescale/blob/gh-pages/test/01.html), [demo](http://localhost/francoisromain.github.io/postcss-typescale/test/01.html)
 
