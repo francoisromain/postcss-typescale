@@ -1,13 +1,13 @@
 {
   "name": "postcss-typescale",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A PostCSS plugin to set type based on a typographic scale.",
   "keywords": [
     "postcss",
     "css",
     "postcss-plugin",
-    "buttons",
-    "system.css"
+    "typographic scale",
+    "postcss-structure"
   ],
   "author": "Francois Romain <francoisromain@gmail.com>",
   "license": "MIT",
