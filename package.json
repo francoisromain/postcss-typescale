@@ -26,7 +26,6 @@
     "postcss": "^5.0.21",
     "postcss-cli": "^2.5.2",
     "postcss-cssnext": "^2.7.0",
-    "system.css": "^0.2.8",
     "postcss-import": "^8.1.2",
     "prismjs": "^1.5.1"
   },
