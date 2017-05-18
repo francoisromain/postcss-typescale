@@ -18,6 +18,44 @@ A [PostCSS] plugin to set type based on a [typographic scale](http://type-scale.
 
 * * * 
 
+## Examples
+
+``` css
+@typescale {
+  scale: 1.25;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.xxl {
+  typescale: 3 2;
+}
+
+.xl {
+  typescale: 2 1.5;
+}
+
+.l {
+  typescale: 1 1.5;
+}
+
+.m {
+  typescale: 0 1;
+}
+
+.s {
+  typescale: -1 1;
+}
+
+.xs {
+  typescale: -2 0.5;
+}
+```
+
+01: [input](https://github.com/francoisromain/postcss-typescale/blob/gh-pages/test/src/01.css), [output](https://github.com/francoisromain/postcss-typescale/blob/gh-pages/test/dist/01.css), [markup](https://github.com/francoisromain/postcss-typescale/blob/gh-pages/test/01.html), [demo](https:/francoisromain.github.io/postcss-typescale/test/01.html)
+
+* * * 
+
 ## Installation
 
 Install the [npm package](https://www.npmjs.com/package/postcss-typescale):
@@ -60,9 +98,4 @@ The line-height can be relative to the font-size if _line-height_ is set to 1 wi
 - _index_: positive or negative integer. font-size = _font-size_ * _scale_ <sup>_index_</sup>.
 - _line-height-fraction_ (optional, default = 1): float or fraction. line-height = _line-height_ * _line-height-fraction_.
 
-* * * 
-
-## Examples
-
-01: [input](https://github.com/francoisromain/postcss-typescale/blob/gh-pages/test/src/01.css), [output](https://github.com/francoisromain/postcss-typescale/blob/gh-pages/test/dist/01.css), [markup](https://github.com/francoisromain/postcss-typescale/blob/gh-pages/test/01.html), [demo](https:/francoisromain.github.io/postcss-typescale/test/01.html)
 
