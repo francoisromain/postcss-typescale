@@ -1,5 +1,11 @@
+@typescale test {
+  scale: 1.5;
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+
 .test {
-  typescale: test;
+  typescale: test 0;
 }
 
 @typescale {
