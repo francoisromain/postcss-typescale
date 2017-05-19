@@ -99,19 +99,16 @@
     <blockquote>Blockquote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</blockquote>
     <hr>
     <h4>Configuration (optional)</h4>
-    <pre><code class="language-css">/*  
-  Global settings (and default values)
-*/
-
-@typescale ([name]) {
+    <pre><code class="language-css">@typescale ([name]) {
+  /* default values */
   scale: 1.25;
   font-size: 1rem;
   line-height: 1.5rem;
 }</code></pre>
-    <ul>
-      <li><i>name</i> (optional): custom identifier. If no _name_ is provided, the default settings are overwritten.</li>
+    <ul class="list-prefix">
+      <li><i>name</i> (optional): custom identifier that allows multiple scales. If not provided, the <i>default</i> settings are overwritten.</li>
       <li><i>scale</i>: typographic scale.</li>
-      <li><i>font-size</i>: default font size.</li>
+      <li><i>font-size</i>: default font size (at <i>index</i> 0).</li>
       <li><i>line-height</i>: baseline grid. Relative to the font-size if set to 1 without unit.</li>
     </ul>
     <hr>
@@ -119,8 +116,8 @@
     <pre><code class="language-css">.[your-style] {
   typescale: ([name]) [index] ([line-height-fraction])
 }</code></pre>
-    <ul>
-      <li><i>name</i> (optional, default = <i>default</i>): string identifier referring to an atRule settings.</li>
+    <ul class="list-prefix">
+      <li><i>name</i> (optional, default = <i>default</i>): string identifier referring to the settings.</li>
       <li><i>index</i>: null or positive or negative integer defining the font-size. font-size = <i>settings font-size</i> * <i>scale</i> <sup><i>index</i></sup>.</li>
       <li><i>line-height-fraction</i> (optional, default = 1): float or fraction defining the line-height. line-height = <i>settings line-height</i> * <i>line-height-fraction</i>.</li>
     </ul>
@@ -128,7 +125,7 @@
   <footer>
     <div class="container">
       <hr class="margin-top-xs" />
-      <p class="s">© 2016 <a href="http://francoisromain.com">François Romain</a> | <a href="https://twitter.com/francoisromain">Twitter</a> | <a href="https://github.com/francoisromain">Github</a></p>
+      <p class="s">© 2017 <a href="http://francoisromain.com">François Romain</a> | <a href="https://twitter.com/francoisromain">Twitter</a> | <a href="https://github.com/francoisromain">Github</a></p>
     </div>
   </footer>
   <script src="dist/prism.js"></script>
