@@ -16,7 +16,7 @@
     <h1>postcss-typescale</h1>
     <p><a href="https://github.com/francoisromain/postcss-typescale">Github</a></p>
     <h4>A PostCSS plugin to set type based on a <a href="http://type-scale.com/">typographic scale</a>.</h4>
-    <hr />
+    <hr>
   </header>
   <main class="container" role="main">
     <div class=row>
@@ -51,10 +51,9 @@
 .xs {
   typescale: -2 0.5;
 }</code></pre>
-        
       </div>
       <div class="bloc-code">
-      <h4>Output</h4>
+        <h4>Output</h4>
         <pre><code class="language-css">.xxl {
   font-size: 1.953125rem;
   line-height: 3rem;
@@ -86,6 +85,7 @@
 }</code></pre>
       </div>
     </div>
+    <hr>
     <h4>Result</h4>
     <p class="xxxl">xxxl: Sample text</p>
     <p class="xxl">xxl: Sample text</p>
@@ -97,6 +97,33 @@
     <p class="lead">Lead: Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
     <p>Paragraph: lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
     <blockquote>Blockquote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</blockquote>
+    <hr>
+    <h4>Configuration (optional)</h4>
+    <pre><code class="language-css">/*  
+  Global settings (and default values)
+*/
+
+@typescale ([name]) {
+  scale: 1.25;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}</code></pre>
+    <ul>
+      <li><i>name</i> (optional): custom identifier. If no _name_ is provided, the default settings are overwritten.</li>
+      <li><i>scale</i>: typographic scale.</li>
+      <li><i>font-size</i>: default font size.</li>
+      <li><i>line-height</i>: baseline grid. Relative to the font-size if set to 1 without unit.</li>
+    </ul>
+    <hr>
+    <h4>Usage</h4>
+    <pre><code class="language-css">.[your-style] {
+  typescale: ([name]) [index] ([line-height-fraction])
+}</code></pre>
+    <ul>
+      <li><i>name</i> (optional, default = <i>default</i>): string identifier referring to an atRule settings.</li>
+      <li><i>index</i>: null or positive or negative integer defining the font-size. font-size = <i>settings font-size</i> * <i>scale</i> <sup><i>index</i></sup>.</li>
+      <li><i>line-height-fraction</i> (optional, default = 1): float or fraction defining the line-height. line-height = <i>settings line-height</i> * <i>line-height-fraction</i>.</li>
+    </ul>
   </main>
   <footer>
     <div class="container">
