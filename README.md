@@ -80,24 +80,29 @@ Global settings (and default values):
 
 ``` css
 @typescale ([name]) {
-  scale: 1.25;          /* Typographic scale */
-  font-size: 1rem;      /* Default font size */
-  line-height: 1.5rem;  /* Baseline grid */
+  scale: 1.25;          /* typographic scale */
+  font-size: 1rem;      /* default font size */
+  line-height: 1.5rem;  /* baseline grid */
 }
 ```
 
-- _name_ (optional): custom identifier. If no _name_ is provided, the default settings are overwritten.
-
-The line-height can be relative to the font-size if _line-height_ is set to 1 without unit.
+- _name_ (optional): custom identifier that allows multiple scales. If not provided, the _default_ settings are overwritten.
+- _scale_: typographic scale.
+- _font-size_: default font size (at _index_ 0).
+- _line-height_: baseline grid. Relative to the font-size if set to 1 without unit.
 
 * * * 
 
 ## Usage
 
-`typescale: ([name]) [index] ([line-height-fraction])`
+``` css
+.[your-style] {
+    typescale: ([name]) [index] ([line-height-fraction])
+}
+```
 
-- _name_ (optional, default = _default_): string identifier referring to an atRule settings.
-- _index_: positive or negative integer defining the font-size. font-size = _settings font-size_ * _scale_ <sup>_index_</sup>.
+- _name_ (optional, default = _default_): string identifier referring to the settings. If not provided, the rule refers to the _default_ settings.
+- _index_: null or positive or negative integer defining the font-size. font-size = _settings font-size_ * _scale_ <sup>_index_</sup>.
 - _line-height-fraction_ (optional, default = 1): float or fraction defining the line-height. line-height = _settings line-height_ * _line-height-fraction_.
 
 

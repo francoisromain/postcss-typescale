@@ -1,6 +1,6 @@
 {
   "name": "postcss-typescale",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A PostCSS plugin to set type based on a typographic scale.",
   "keywords": [
     "postcss",
@@ -19,14 +19,14 @@
     "url": "https://github.com/francoisromain/postcss-typescale/issues"
   },
   "homepage": "http://francoisromain.github.io/postcss-typescale/",
-  "dependencies": {
-    "postcss": "^6.0.1"
-  },
   "scripts": {
     "build": "babel src --out-dir lib",
     "test": "ava && eslint *.js"
   },
   "main": "./lib/index.js",
+  "dependencies": {
+    "postcss": "^6.0.1"
+  },
   "devDependencies": {
     "ava": "^0.19.1",
     "babel-cli": "^6.24.1",
