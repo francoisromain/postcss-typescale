@@ -12,10 +12,13 @@
 </head>
 
 <body>
-  <header class="container" role="banner">
+  <header class="container pt-xl" role="banner">
     <h1>postcss-typescale</h1>
-    <p><a href="https://github.com/francoisromain/postcss-typescale">Github</a></p>
-    <h4>A PostCSS plugin to set type based on a <a href="http://type-scale.com/">typographic scale</a>.</h4>
+    <p>
+      <a href="https://github.com/francoisromain/postcss-typescale">Github</a>
+    </p>
+    <h4>A PostCSS plugin to set type based on a
+      <a href="http://type-scale.com/">typographic scale</a>.</h4>
     <hr>
   </header>
   <main class="container" role="main">
@@ -95,7 +98,8 @@
     <p class="s">s: Sample text</p>
     <p class="xs">xs: Sample text</p>
     <p class="lead">Lead: Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-    <p>Paragraph: lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+    <p>Paragraph: lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+      Nullam quis risus eget urna mollis ornare vel eu leo.</p>
     <blockquote>Blockquote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</blockquote>
     <hr>
     <h4>Configuration (optional)</h4>
@@ -106,10 +110,16 @@
   line-height: 1.5rem;
 }</code></pre>
     <ul class="list-prefix">
-      <li><i>name</i> (optional): custom identifier that allows multiple scales. If not provided, the <i>default</i> settings are overwritten.</li>
-      <li><i>scale</i>: typographic scale.</li>
-      <li><i>font-size</i>: default font size (at <i>index</i> 0).</li>
-      <li><i>line-height</i>: baseline grid. Relative to the font-size if set to 1 without unit.</li>
+      <li>
+        <i>name</i> (optional): custom identifier that allows multiple scales. If not provided, the
+        <i>default</i> settings are overwritten.</li>
+      <li>
+        <i>scale</i>: typographic scale.</li>
+      <li>
+        <i>font-size</i>: default font size (at
+        <i>index</i> 0).</li>
+      <li>
+        <i>line-height</i>: baseline grid. Relative to the font-size if set to 1 without unit.</li>
     </ul>
     <hr>
     <h4>Usage</h4>
@@ -117,15 +127,30 @@
   typescale: ([name]) [index] ([line-height-fraction])
 }</code></pre>
     <ul class="list-prefix">
-      <li><i>name</i> (optional, default = <i>default</i>): string identifier referring to the settings.</li>
-      <li><i>index</i>: null or positive or negative integer defining the font-size. font-size = <i>settings font-size</i> * <i>scale</i> <sup><i>index</i></sup>.</li>
-      <li><i>line-height-fraction</i> (optional, default = 1): float or fraction defining the line-height. line-height = <i>settings line-height</i> * <i>line-height-fraction</i>.</li>
+      <li>
+        <i>name</i> (optional, default =
+        <i>default</i>): string identifier referring to the settings.</li>
+      <li>
+        <i>index</i>: null or positive or negative integer defining the font-size. font-size =
+        <i>settings font-size</i> *
+        <i>scale</i>
+        <sup>
+          <i>index</i>
+        </sup>.</li>
+      <li>
+        <i>line-height-fraction</i> (optional, default = 1): float or fraction defining the line-height. line-height =
+        <i>settings line-height</i> *
+        <i>line-height-fraction</i>.</li>
     </ul>
   </main>
   <footer>
     <div class="container">
       <hr class="mt" />
-      <p class="s">© 2017 <a href="http://francoisromain.com">François Romain</a> | <a href="https://twitter.com/francoisromain">Twitter</a> | <a href="https://github.com/francoisromain">Github</a></p>
+      <p class="s">© 2017
+        <a href="http://francoisromain.com">François Romain</a> |
+        <a href="https://twitter.com/francoisromain">Twitter</a> |
+        <a href="https://github.com/francoisromain">Github</a>
+      </p>
     </div>
   </footer>
   <script src="dist/prism.js"></script>
