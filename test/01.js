@@ -14,13 +14,13 @@ const tests = {
 }
 `,
   output: `.test {
-  font-size: 1.8rem;
-  line-height: 4rem;
+  font-size: calc(2.25 * 0.8rem);
+  line-height: calc(2 * 2rem);
 }
 
 .truc {
-  font-size: 1.5625rem;
-  line-height: 3rem;
+  font-size: calc(1.5625 * 1rem);
+  line-height: calc(2 * 1.5rem);
 }
 `,
 };
