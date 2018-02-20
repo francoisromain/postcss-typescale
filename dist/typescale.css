@@ -3,50 +3,37 @@
   --unit: 1.5rem;
 }
 
-.xxxl {
+.text-xxxl {
   font-size: calc(2.44140625 * var(--base-font-size));
   line-height: calc(2 * var(--unit));
 }
 
-.xxl {
+.text-xxl {
   font-size: calc(1.953125 * var(--base-font-size));
   line-height: calc(2 * var(--unit));
 }
 
-.xl {
+.text-xl {
   font-size: calc(1.5625 * var(--base-font-size));
   line-height: calc(1.5 * var(--unit));
 }
 
-.l {
+.text-l {
   font-size: calc(1.25 * var(--base-font-size));
   line-height: calc(1.5 * var(--unit));
 }
 
-.m {
+.text-m {
   font-size: calc(1 * var(--base-font-size));
   line-height: calc(1 * var(--unit));
 }
 
-.s {
+.text-s {
   font-size: calc(0.8 * var(--base-font-size));
   line-height: calc(1 * var(--unit));
 }
 
-.xs {
+.text-xs {
   font-size: calc(0.64 * var(--base-font-size));
   line-height: calc(0.5 * var(--unit));
-}
-
-.lead {
-  font-size: calc(1.5625 * var(--base-font-size));
-  line-height: calc(1.5 * var(--unit));
-}
-
-blockquote {
-  font-size: calc(1.5625 * var(--base-font-size));
-  line-height: calc(1.5 * var(--unit));
-  font-style: italic;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }

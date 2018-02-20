@@ -9,41 +9,30 @@
   line-height: var(--unit);
 }
 
-.xxxl {
+.text-xxxl {
   typescale: 4 2;
 }
 
-.xxl {
+.text-xxl {
   typescale: 3 2;
 }
 
-.xl {
+.text-xl {
   typescale: 2 1.5;
 }
 
-.l {
+.text-l {
   typescale: 1 1.5;
 }
 
-.m {
+.text-m {
   typescale: 0 1;
 }
 
-.s {
+.text-s {
   typescale: -1 1;
 }
 
-.xs {
+.text-xs {
   typescale: -2 0.5;
-}
-
-.lead {
-  typescale: 2 1.5;
-}
-
-blockquote {
-  typescale: 2 1.5;
-  font-style: italic;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
