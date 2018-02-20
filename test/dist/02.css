@@ -1,9 +1,9 @@
 .test {
-  font-size: 0.8rem;
-  line-height: 2rem;
+  font-size: calc(1 * 0.8rem);
+  line-height: calc(1 * 2rem);
 }
 
 .truc {
-  font-size: 3.75rem;
-  line-height: 3rem;
+  font-size: calc(1.25 * 3rem);
+  line-height: calc(1 * 3rem);
 }

@@ -1,46 +1,51 @@
+:root {
+  --base-font-size: 1rem;
+  --unit: 1.5rem;
+}
+
 .xxxl {
-  font-size: 2.44140625rem;
-  line-height: 3rem;
+  font-size: calc(2.44140625 * var(--base-font-size));
+  line-height: calc(2 * var(--unit));
 }
 
 .xxl {
-  font-size: 1.953125rem;
-  line-height: 3rem;
+  font-size: calc(1.953125 * var(--base-font-size));
+  line-height: calc(2 * var(--unit));
 }
 
 .xl {
-  font-size: 1.5625rem;
-  line-height: 2.25rem;
+  font-size: calc(1.5625 * var(--base-font-size));
+  line-height: calc(1.5 * var(--unit));
 }
 
 .l {
-  font-size: 1.25rem;
-  line-height: 2.25rem;
+  font-size: calc(1.25 * var(--base-font-size));
+  line-height: calc(1.5 * var(--unit));
 }
 
 .m {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: calc(1 * var(--base-font-size));
+  line-height: calc(1 * var(--unit));
 }
 
 .s {
-  font-size: 0.8rem;
-  line-height: 1.5rem;
+  font-size: calc(0.8 * var(--base-font-size));
+  line-height: calc(1 * var(--unit));
 }
 
 .xs {
-  font-size: 0.64rem;
-  line-height: 0.75rem;
+  font-size: calc(0.64 * var(--base-font-size));
+  line-height: calc(0.5 * var(--unit));
 }
 
 .lead {
-  font-size: 1.5625rem;
-  line-height: 2.25rem;
+  font-size: calc(1.5625 * var(--base-font-size));
+  line-height: calc(1.5 * var(--unit));
 }
 
 blockquote {
-  font-size: 1.5625rem;
-  line-height: 2.25rem;
+  font-size: calc(1.5625 * var(--base-font-size));
+  line-height: calc(1.5 * var(--unit));
   font-style: italic;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
