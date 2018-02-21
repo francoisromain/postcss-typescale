@@ -2,11 +2,12 @@ import postcss from 'postcss';
 import test from 'ava';
 import test01 from './01';
 import test02 from './02';
-import plugin from '../src/index';
+import plugin from '../lib/index';
 
 function run(t, input, output, opts = {}) {
-  return postcss([plugin(opts)]).process(input)
-    .then(result => {
+  return postcss([plugin(opts)])
+    .process(input)
+    .then((result) => {
       t.deepEqual(result.css, output);
       t.deepEqual(result.warnings().length, 0);
     });

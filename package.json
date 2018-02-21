@@ -1,14 +1,8 @@
 {
   "name": "postcss-typescale",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A PostCSS plugin to set type based on a typographic scale.",
-  "keywords": [
-    "postcss",
-    "css",
-    "postcss-plugin",
-    "typographic scale",
-    "postcss-structure"
-  ],
+  "keywords": ["postcss", "css", "postcss-plugin", "typographic scale", "postcss-structure"],
   "author": "Francois Romain <francoisromain@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -21,7 +15,7 @@
   "homepage": "http://francoisromain.github.io/postcss-typescale/",
   "scripts": {
     "build": "babel src --out-dir lib",
-    "test": "ava && eslint *.js"
+    "test": "npm run build && ava && eslint *.js"
   },
   "main": "./lib/index.js",
   "dependencies": {
@@ -50,16 +44,10 @@
     }
   },
   "ava": {
-    "files": [
-      "test/tests.js"
-    ],
-    "require": [
-      "babel-register"
-    ]
+    "files": ["test/tests.js"],
+    "require": ["babel-register"]
   },
   "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "presets": ["es2015"]
   }
 }
