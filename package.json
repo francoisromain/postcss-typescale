@@ -1,8 +1,14 @@
 {
   "name": "postcss-typescale",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A PostCSS plugin to set type based on a typographic scale.",
-  "keywords": ["postcss", "css", "postcss-plugin", "typographic scale", "postcss-structure"],
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "typographic scale",
+    "postcss-structure"
+  ],
   "author": "Francois Romain <francoisromain@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -15,22 +21,23 @@
   "homepage": "http://francoisromain.github.io/postcss-typescale/",
   "scripts": {
     "build": "babel src --out-dir lib",
-    "test": "npm run build && ava && eslint *.js"
+    "test": "npm run build && ava && eslint '**/*.js'"
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "postcss": "^6.0.19"
+    "postcss": "^7.0.17"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "eslint": "^4.18.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "ava": "^2.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0"
   },
   "eslintConfig": {
     "extends": "airbnb",
@@ -44,10 +51,23 @@
     }
   },
   "ava": {
-    "files": ["test/tests.js"],
-    "require": ["babel-register"]
+    "files": [
+      "test/tests.js"
+    ],
+    "require": [
+      "@babel/register"
+    ]
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
   }
 }

@@ -4,7 +4,7 @@ export default (rule, options) => {
   const declNew = [
     postcss.decl({
       prop: 'font-size',
-      value: `calc(${Math.pow(parseFloat(options.scale), parseFloat(options.index))} * ${
+      value: `calc(${parseFloat(options.scale) ** parseFloat(options.index)} * ${
         options.fontSize
       })`,
     }),

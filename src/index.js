@@ -33,19 +33,21 @@ module.exports = postcss.plugin('postcss-typescale', (opts) => {
 
         node.remove();
       } else if (node.type === 'decl' && node.prop.match(/^typescale/)) {
-        const values = node.value.split(/\s+(?![^\[]*\]|[^(]*\)|[^\{]*})/);
+        const values = node.value.split(/\s+(?![^[]*\]|[^(]*\)|[^{]*})/);
         options.tmp = Object.assign({}, options.default);
 
         if (values[0].match(/^[a-z]/i)) {
           Object.assign(options.tmp, options[values.shift()]);
         }
 
-        if (values[0]) {
-          options.tmp.index = values[0];
+        const [index, lineHeightFraction] = values;
+
+        if (index) {
+          options.tmp.index = index;
         }
 
-        if (values[1]) {
-          options.tmp.lineHeightFraction = values[1];
+        if (lineHeightFraction) {
+          options.tmp.lineHeightFraction = lineHeightFraction;
         }
 
         typescale(node, options.tmp);
