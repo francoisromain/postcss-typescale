@@ -11,23 +11,16 @@
     "css-01": "postcss test/src/01.css -o test/dist/01.css",
     "css-02": "postcss test/src/02.css -o test/dist/02.css",
     "build": "npm run babel",
-    "test":
-      "npm run babel && npm run css-typescale && npm run css-01 && npm run css-02",
-    "dev":
-      "onchange 'index.html' 'src/**/*.*' 'postcss-typescale/src/**/*.*' -- npm run css-typescale & livereload"
+    "test": "npm run babel && npm run css-typescale && npm run css-01 && npm run css-02",
+    "dev": "onchange 'index.html' 'src/**/*.*' 'postcss-typescale/src/**/*.*' -- npm run css-typescale & livereload"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "livereload": "^0.6.3",
-    "onchange": "^3.3.0",
-    "postcss": "^6.0.19",
-    "postcss-cli": "^5.0.0"
-  },
-  "babel": {
-    "presets": ["es2015"]
-  },
-  "stylelint": {
-    "extends": "stylelint-config-standard"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "livereload": "^0.8.0",
+    "onchange": "^6.0.0",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.2"
   }
 }
