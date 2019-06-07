@@ -57,17 +57,5 @@
     "require": [
       "@babel/register"
     ]
-  },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ]
   }
 }
