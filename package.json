@@ -6,18 +6,13 @@
   "license": "MIT",
   "repository": "francoisromain/postcss-typescale",
   "scripts": {
-    "babel": "babel postcss-typescale/src --out-dir postcss-typescale/lib",
     "css-typescale": "postcss src/typescale.css -o dist/typescale.css",
     "css-01": "postcss test/src/01.css -o test/dist/01.css",
     "css-02": "postcss test/src/02.css -o test/dist/02.css",
-    "build": "npm run babel",
-    "test": "npm run babel && npm run css-typescale && npm run css-01 && npm run css-02",
+    "test": "npm run css-typescale && npm run css-01 && npm run css-02",
     "dev": "onchange 'index.html' 'src/**/*.*' 'postcss-typescale/src/**/*.*' -- npm run css-typescale & livereload"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
     "livereload": "^0.8.0",
     "onchange": "^6.0.0",
     "postcss": "^7.0.17",
