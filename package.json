@@ -1,6 +1,6 @@
 {
   "name": "postcss-typescale",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A PostCSS plugin to set type based on a typographic scale.",
   "keywords": [
     "postcss",
@@ -33,6 +33,7 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/register": "^7.12.10",
     "ava": "^3.15.0",
+    "clean-publish": "^1.1.8",
     "eslint": "^7.17.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.1.0",
