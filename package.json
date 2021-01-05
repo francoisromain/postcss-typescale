@@ -13,9 +13,9 @@
     "dev": "onchange 'index.html' 'src/**/*.*' 'postcss-typescale/src/**/*.*' -- npm run css-typescale & livereload"
   },
   "devDependencies": {
-    "livereload": "^0.8.0",
-    "onchange": "^6.0.0",
-    "postcss": "^7.0.17",
-    "postcss-cli": "^6.1.2"
+    "livereload": "^0.9.1",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1"
   }
 }
